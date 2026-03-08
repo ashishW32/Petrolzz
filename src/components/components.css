@@ -1,0 +1,81 @@
+:root {
+  --pm-bg: #f6f8fb;
+  --pm-surface: #ffffff;
+  --pm-text: #111827;
+  --pm-muted: #6b7280;
+  --pm-border: #e5e7eb;
+  --pm-primary: #2563eb;
+  --pm-primary-dark: #1d4ed8;
+  --pm-success: #16a34a;
+  --pm-warning: #d97706;
+  --pm-danger: #dc2626;
+  --pm-radius-sm: 8px;
+  --pm-radius-md: 12px;
+  --pm-radius-lg: 16px;
+  --pm-shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.08);
+  --pm-shadow-md: 0 8px 24px rgba(17, 24, 39, 0.08);
+}
+
+.pm-card {
+  background: var(--pm-surface);
+  border: 1px solid var(--pm-border);
+  border-radius: var(--pm-radius-md);
+  box-shadow: var(--pm-shadow-sm);
+}
+
+.pm-focus-ring:focus-visible {
+  outline: 2px solid var(--pm-primary);
+  outline-offset: 2px;
+}
+
+.pm-button {
+  border: none;
+  border-radius: var(--pm-radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  padding: 0.6rem 1rem;
+}
+
+.pm-button--primary {
+  background: var(--pm-primary);
+  color: #fff;
+}
+
+.pm-button--primary:hover {
+  background: var(--pm-primary-dark);
+  box-shadow: var(--pm-shadow-sm);
+}
+
+.pm-button--secondary {
+  background: #eff6ff;
+  color: var(--pm-primary-dark);
+}
+
+.pm-button--secondary:hover {
+  background: #dbeafe;
+}
+
+.pm-button--ghost {
+  background: transparent;
+  color: var(--pm-text);
+}
+
+.pm-button--ghost:hover {
+  background: #f3f4f6;
+}
+
+.pm-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pm-grid {
+  display: grid;
+  gap: 1rem;
+}
